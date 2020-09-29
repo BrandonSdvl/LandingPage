@@ -1,0 +1,29 @@
+.button {
+    border: 0;
+    background-color: $soft-blue;
+    border: 2px solid transparent;
+    outline: none;
+    padding: 10px 35px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color .2s ease-in;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.377);
+
+    &:hover {
+        color: $soft-blue;
+        border: 2px solid $soft-blue;
+        background-color: white;
+    }
+
+    &--red {
+        background-color: $soft-red;
+
+        &:hover {
+            color: $soft-red;
+            border: 2px solid $soft-red;
+            background-color: white;
+        }
+    }
+}
