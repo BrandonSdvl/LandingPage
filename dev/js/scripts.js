@@ -1,16 +1,15 @@
 const hamburger = document.getElementById('hamburger')
 const nav = document.getElementById('nav')
+const logo = document.querySelector('.header__logo')
 
 hamburger.addEventListener('click', (e) => {
     if (!nav.classList.contains('nav--show')) {
         e.target.src = 'images/icon-close.svg';
-        nav.style.display = 'flex'
         nav.classList.add('nav--show')
-        console.log('show add')
+        logo.src = 'images/logo-bookmark-white.svg'
     } else if (nav.classList.contains('nav--show')) {
         e.target.src = 'images/icon-hamburger.svg'
-        nav.style.display = 'none'
         nav.classList.remove('nav--show')
-        console.log('show remove')
+        logo.src = 'images/logo-bookmark.svg'
     }
 })

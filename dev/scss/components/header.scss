@@ -18,12 +18,16 @@
     }
 
     .nav {
+
+        &--show {
+            display: flex;
+        }
+
         display: none;
         z-index: -10;
         width: 100vw;
-        height: auto;
-        padding-bottom: 100px;
-        background-color: rgba(37, 43, 70, 0.911);
+        min-height: 100vh;
+        background-color: hsla(229, 31%, 21%, 0.98);
         position: absolute;
         top: 0;
         left: 0;
@@ -60,7 +64,9 @@
             width: 100px;
             display: flex;
             justify-content: space-between;
-            margin-top: 20px;
+            margin-bottom: 3rem;
+            margin-top: auto;
+            bottom: 0;
         }
 
         .button--login {

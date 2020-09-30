@@ -46,9 +46,8 @@ body {
     display: none;
     z-index: -10;
     width: 100vw;
-    height: auto;
-    padding-bottom: 100px;
-    background-color: rgba(37, 43, 70, 0.911);
+    min-height: 100vh;
+    background-color: rgba(37, 43, 70, 0.98);
     position: absolute;
     top: 0;
     left: 0;
@@ -65,6 +64,11 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .header .nav--show {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
     .header .nav .main-menu {
       margin-top: 100px;
       -webkit-box-orient: vertical;
@@ -110,7 +114,9 @@ body {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin-top: 20px; }
+      margin-bottom: 3rem;
+      margin-top: auto;
+      bottom: 0; }
     .header .nav .button--login {
       width: 100%;
       background-color: transparent;
