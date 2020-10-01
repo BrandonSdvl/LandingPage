@@ -1,0 +1,147 @@
+.section {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    color: $very-dark-blue;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row-reverse;
+        width: 85%;
+        justify-content: space-between;
+    }
+
+    &__first {
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: red;
+            top: 180px;
+            right: 0;
+            width: 73%;
+            height: 220px;
+            background-color: $soft-blue;
+            border-bottom-left-radius: 100px;
+            border-top-left-radius: 100px;
+            z-index: -1;
+
+            @include tablet {
+                width: 35%;
+                top: 220px;
+                height: 200px;
+            }
+
+            @include laptop {
+                top: 260px;
+                height: 340px;
+                width: 35%;
+            }
+
+            @include desktop {
+                height: 380px;
+                top: 270px;
+            }
+        }
+    }
+
+    &__item {
+        margin: auto;
+        margin-top: 4rem;
+        width: 90%;
+
+        @include tablet {
+            width: 50%;
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        @include laptop {
+            margin-left: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+
+    &__image {
+        @include tablet {
+            width: 55%;
+            margin: auto;
+        }
+
+        @include laptop {
+            position: absolute;
+            width: 45%;
+            right: 3%;
+            top: 150px;
+        }
+    }
+
+    &__img {
+        width: 400px;
+        display: block;
+        margin: auto;
+        position: relative;
+
+        @include tablet {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 40px;
+
+        @include tablet {
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        @include laptop {
+            font-size: 50px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        color: $grayish-blue;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+
+        @include tablet {
+            text-align: left;
+        }
+    }
+
+    .buttons {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+
+        @include tablet {
+            justify-content: start;
+        }
+
+        .button {
+            padding: 5px;
+            width: auto;
+
+            @include laptop {
+                width: 180px;
+                margin-right: 25px;
+            }
+        }
+    }
+
+    @include laptop {
+        width: 75%;
+        height: 70vh;
+    }
+}

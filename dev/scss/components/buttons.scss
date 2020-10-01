@@ -10,6 +10,7 @@
     transition: background-color .2s ease-in;
     cursor: pointer;
     box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.377);
+    font-family: 'Rubik', sans-serif;
 
     &:hover {
         color: $soft-blue;
@@ -24,6 +25,17 @@
             color: $soft-red;
             border: 2px solid $soft-red;
             background-color: white;
+        }
+    }
+
+    &--white {
+        margin-left: 13px;
+        background-color: $light-gray;
+        color: $very-dark-blue;
+
+        &:hover {
+            color: $grayish-blue;
+            border: 2px solid $grayish-blue;
         }
     }
 }

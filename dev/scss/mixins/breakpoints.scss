@@ -5,13 +5,19 @@
 }
 
 @mixin tablet {
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 740px) {
         @content;
     }
 }
 
 @mixin laptop {
     @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1440px) {
         @content;
     }
 }
