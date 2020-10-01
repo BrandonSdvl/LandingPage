@@ -21,49 +21,45 @@ html(lang="en")
           img(src="images/icon-facebook.svg", alt="Facebook").social-media__icon
           img(src="images/icon-twitter.svg", alt="Twitter").social-media__icon
 
-    section.section.section__first
+    section.section.section--first
       .section__image
         img(src="images/illustration-hero.svg", alt="Image").section__img
       .section__item
-        h1.section__title A Simple Bookmark Manager
-        p.section__text A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+        h1.title A Simple Bookmark Manager
+        p.text A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
         .buttons
           button.button Get it on Chrome
           button.button.button--white Get it on Firefox
+
+    section.section.section--second
+      h2.title.section__title--second Features
+      p.text.section__text--second Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+      ul#tabs.tabs
+        li#firstTab.tabs__item.tabs__item--active Simple Bookmarking
+        li#secondTab.tabs__item Speedy Searching      
+        li#thirdTab.tabs__item Easy Sharing
+      article.article.article--show
+        img(src="images/illustration-features-tab-1.svg", alt="", srcset="").article__image
+        .content
+          h3.title Bookmark in one click
+          p.text Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+          button.button More Info
+      article.article
+        img(src="images/illustration-features-tab-2.svg", alt="", srcset="").article__image
+        .content
+          h3.title Intelligent search
+          p.text Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+          button.button More Info
+      article.article
+        img(src="images/illustration-features-tab-3.svg", alt="", srcset="").article__image
+        .content
+          h3.title Share your bookmarks
+          p.text Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+          button.button More Info
+        
     script(src="js/scripts-min.js")
 
 //-   browser tab and see your sites load instantly. Try it for free.
-
-//-   Get it on Chrome
-//-   Get it on Firefox
-
-//-   Features
-
-//-   Our aim is to make it quick and easy for you to access your favourite websites. 
-//-   Your bookmarks sync between your devices so you can access them on the go.
-
-//-   Simple Bookmarking
-//-   Speedy Searching
-//-   Easy Sharing
-
-//-   Bookmark in one click
-
-//-   Organize your bookmarks however you like. Our simple drag-and-drop interface 
-//-   gives you complete control over how you manage your favourite sites.
-
-//-   More Info
-
-//-   Intelligent search
-
-//-   Our powerful search feature will help you find saved sites in no time at all. 
-//-   No need to trawl through all of your bookmarks.
-
-//-   More Info
-
-//-   Share your bookmarks
-
-//-   Easily share your bookmarks and collections with others. Create a shareable 
-//-   link that you can send at the click of a button.
 
 //-   More Info
 

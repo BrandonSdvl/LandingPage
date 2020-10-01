@@ -1,0 +1,65 @@
+.tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+
+    &__item {
+        list-style: none;
+        color: $grayish-blue;
+        width: 90%;
+        text-align: center;
+        font-size: 18px;
+        padding: 20px 0;
+        border-top: 1px solid $grayish-blue;
+        cursor: pointer;
+
+        &:last-child {
+            border-bottom: 1px solid $grayish-blue;
+
+            @include laptop {
+                border: none;
+            }
+        }
+
+        @include laptop {
+            border: none;
+        }
+
+        &--active {
+            font-weight: 500;
+            color: $very-dark-blue;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 60%;
+                height: 5px;
+                background-color: $soft-red;
+                position: absolute;
+                bottom: 0;
+                border-radius: 3px;
+
+                @include tablet {
+                    width: 40%;
+                }
+
+                @include laptop {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    @include laptop {
+        flex-direction: row;
+        border-bottom: 1px solid $grayish-blue;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

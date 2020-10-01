@@ -23,3 +23,34 @@ body {
 .hide {
     display: none;
 }
+
+.text {
+    text-align: center;
+    color: $grayish-blue;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 20px;
+
+    @include tablet {
+        text-align: left;
+        padding: 0;
+        font-size: 18px;
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+
+    @include tablet {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    @include laptop {
+        font-size: 40px;
+    }
+}
