@@ -117,25 +117,10 @@
 
     @include laptop {
         width: 75%;
+        margin-bottom: 15rem;
     }
 
     &--second {
         justify-content: center;
-
-        .section__title--second {
-            margin-bottom: 0;
-
-            @include laptop {
-                text-align: center;
-            }
-        }
-
-        .section__text--second {
-            @include laptop {
-                text-align: center;
-                width: 60%;
-                margin: 1.5rem auto;
-            }
-        }
     }
 }

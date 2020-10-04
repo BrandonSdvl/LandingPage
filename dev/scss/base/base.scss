@@ -37,6 +37,17 @@ body {
         padding: 0;
         font-size: 18px;
     }
+
+    &--center {
+        @include tablet {
+            text-align: center;
+        }
+
+        @include laptop {
+            width: 50%;
+            margin: 1.5rem auto;
+        }
+    }
 }
 
 .title {
@@ -44,6 +55,7 @@ body {
     font-size: 30px;
     font-weight: 500;
     line-height: 40px;
+    margin-bottom: 0;
 
     @include tablet {
         text-align: left;
@@ -52,5 +64,13 @@ body {
 
     @include laptop {
         font-size: 40px;
+    }
+
+    &--center {
+        margin-bottom: 0;
+
+        @include tablet {
+            text-align: center;
+        }
     }
 }
