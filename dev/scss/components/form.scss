@@ -1,0 +1,80 @@
+.form {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    position: relative;
+
+    &__content {
+        margin-bottom: 2rem;
+        z-index: 10;
+        position: relative;
+    }
+
+    &__input {
+        width: 100%;
+        font-size: 14px;
+        border: none;
+        display: block;
+        padding: 15px 15px;
+        color: $very-dark-blue;
+        font-family: 'Rubik', sans-serif;
+        border-radius: 5px;
+        outline: none;
+        box-sizing: border-box;
+        font-weight: 500;
+        z-index: 20;
+        border: 2px solid transparent;
+
+        &:invalid {
+            border: 2px solid $soft-red;
+            background-image: url('../images/icon-error.svg');
+            background-repeat: no-repeat;
+            background-position: 93% center;
+
+            &+.form__content::after {
+                visibility: visible;
+            }
+        }
+
+    }
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: "Whoops, make sure it's an email";
+        width: 100%;
+        height: auto;
+        background-color: $soft-red;
+        padding: 8px 8px 5px 8px;
+        font-size: 12px;
+        color: $light-gray;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transform: translateY(-110px);
+        z-index: -10;
+        transition: transform .2s ease;
+
+        @include laptop {
+            width: 60%;
+            transform: translateY(20px);
+        }
+    }
+
+    &:invalid {
+        &::after {
+            transform: translateY(-85px);
+
+            @include laptop {
+                transform: translateY(48px);
+            }
+        }
+    }
+
+    @include laptop {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-gap: 30px;
+        height: 50px;
+    }
+}

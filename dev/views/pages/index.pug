@@ -17,9 +17,7 @@ html(lang="en")
           li.main-menu__item.link Pricing
           li.main-menu__item.link Contact
           button.button.button--red.button--login Login
-        .social-media
-          img(src="images/icon-facebook.svg", alt="Facebook").social-media__icon
-          img(src="images/icon-twitter.svg", alt="Twitter").social-media__icon
+        include ../includes/social-media
 
     section.section.section--first
       .section__image
@@ -109,19 +107,23 @@ html(lang="en")
           .accordion__content
             p.text.accordion__text Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam  vitae neque eget nisl gravida pellentesque non ut velit.
         button.button More Info
-        
+
+    footer.footer
+      .footer__content
+        p.text.footer__numbers 35,000+ already joined
+        h3.title.footer__title Stay up-to-date with what we’re doing
+        form#form.form
+          .form__content
+            input(type="email" placeholder="Enter your email address").form__input
+            //- .form__content--error 
+          button#buttonForm.button.button--red.button--form Contact Us
+      
+    nav.footer-nav
+      .footer-nav__content
+        img(src="images/logo-bookmark-white.svg", alt="logo").footer-nav__logo
+        ul.footer-nav__links
+          li.footer-nav__link Features
+          li.footer-nav__link Pricing
+          li.footer-nav__link Contact    
+      include ../includes/social-media
     script(src="js/scripts-min.js")
-
-//- browser tab and see your sites load instantly. Try it for free.
-
-//-   More Info
-
-//-   35,000+ already joined
-
-//-   Stay up-to-date with what we’re doing
-
-//-   Contact Us
-
-//-   Features
-//-   Pricing
-//-   Contact
