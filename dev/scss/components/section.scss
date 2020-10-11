@@ -4,7 +4,7 @@
     color: $very-dark-blue;
     display: flex;
     flex-direction: column;
-    margin-bottom: 8rem;
+    margin-bottom: 7rem;
 
     &--first {
         margin-top: 3rem;
@@ -30,7 +30,7 @@
             @include tablet {
                 width: 35%;
                 top: 220px;
-                height: 200px;
+                height: 250px;
             }
 
             @include laptop {
@@ -52,14 +52,14 @@
         width: 90%;
 
         @include tablet {
-            width: 50%;
+            width: 45%;
             margin-top: 0;
             margin-left: 0;
         }
 
         @include laptop {
             margin-left: 0;
-            margin-top: 10%;
+            margin-top: 5%;
         }
     }
 
@@ -78,7 +78,7 @@
     }
 
     &__img {
-        width: 400px;
+        width: 350px;
         display: block;
         margin: auto;
         position: relative;
@@ -116,11 +116,16 @@
     }
 
     @include laptop {
-        width: 75%;
         margin-bottom: 15rem;
     }
 
     &--second {
         justify-content: center;
+    }
+
+    &--third {
+        @include tablet {
+            width: 75%;
+        }
     }
 }

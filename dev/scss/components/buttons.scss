@@ -18,6 +18,10 @@
         background-color: white;
     }
 
+    &:active {
+        transform: scale(.95);
+    }
+
     &--red {
         background-color: $soft-red;
 
@@ -41,7 +45,6 @@
 
     &--form {
         width: 100%;
-        // background-color: $soft-red;
         height: 50px;
         padding: 0;
     }

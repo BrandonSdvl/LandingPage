@@ -56,7 +56,7 @@
         transition: transform .2s ease;
 
         @include laptop {
-            width: 60%;
+            width: 70%;
             transform: translateY(20px);
         }
     }
@@ -72,8 +72,9 @@
     }
 
     @include laptop {
+        width: 60%;
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 70% 30%;
         grid-gap: 30px;
         height: 50px;
     }
