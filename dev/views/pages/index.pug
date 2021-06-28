@@ -13,9 +13,12 @@ html(lang="en")
       img(src="images/icon-hamburger.svg", alt="Hamburger").hamburger#hamburger
       nav.nav#nav
         ul.main-menu
-          li.main-menu__item.link Features
-          li.main-menu__item.link Pricing
-          li.main-menu__item.link Contact
+          li.main-menu__item
+            a(href="#features").link Features
+          li.main-menu__item
+            a(href="#pricing").link Pricing
+          li.main-menu__item
+            a(href="#contact").link Contact
           button.button.button--red.button--login Login
         include ../includes/social-media
 
@@ -29,7 +32,7 @@ html(lang="en")
           button.button Get it on Chrome
           button.button.button--white Get it on Firefox
 
-    section.section.section--second
+    section#features.section.section--second
       h2.title.title--center.title--second Features
       p.text.text--center Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
       ul#tabs.tabs
@@ -78,7 +81,7 @@ html(lang="en")
           img(src="images/bg-dots.svg", alt="image").card__pattern
           button.button Add & Install Extension
 
-    section.section.section--fourth
+    section#pricing.section.section--fourth
       h2.title.title--center.title--second Frequently Asked Questions
       p.text.text--center Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
       #accordion.accordion
@@ -108,7 +111,7 @@ html(lang="en")
             p.text.accordion__text Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam  vitae neque eget nisl gravida pellentesque non ut velit.
         button.button More Info
 
-    footer.footer
+    footer#contact.footer
       .footer__content
         p.text.footer__numbers 35,000+ already joined
         h3.title.footer__title.title--second Stay up-to-date with what we’re doing
@@ -121,8 +124,14 @@ html(lang="en")
       .footer-nav__content
         img(src="images/logo-bookmark-white.svg", alt="logo").footer-nav__logo
         ul.footer-nav__links
-          li.footer-nav__link Features
-          li.footer-nav__link Pricing
-          li.footer-nav__link Contact    
+          li.footer-nav__link
+            a(href="#features") Features
+          li.footer-nav__link
+            a(href="#pricing") Pricing
+          li.footer-nav__link
+            a(href="#contact") Contact  
       include ../includes/social-media
+    
+    #goTop.go-top
+      a(href="#top").go-top__link
     script(src="js/scripts-min.js")

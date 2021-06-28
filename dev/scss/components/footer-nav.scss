@@ -37,7 +37,6 @@
 
     &__link {
         list-style: none;
-        color: $light-gray;
         font-weight: 400;
         text-transform: uppercase;
         padding: 20px 0;
@@ -45,8 +44,14 @@
         cursor: pointer;
         transition: color .2s ease;
 
+        a {
+            color: $light-gray;
+            text-decoration: none;
+        }
+
         &:hover {
             color: $soft-red;
+            color: $light-gray;
         }
 
         @include laptop {
